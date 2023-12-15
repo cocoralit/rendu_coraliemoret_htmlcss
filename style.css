@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+
+/*/ barre de navigation /*/
+.navbar {
+  background-color: #740002;
+  overflow: hidden;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  float: left;
+}
+
+.nav-links li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #1A472A;
+  color: white;
+  transition: background-color 0.3s ease;
+  transform: scale(1.2);
+}
+
