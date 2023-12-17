@@ -5,25 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personnages</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav>
+        <a href="index.html"><img class="logo" src="images/logo.png"  alt="Accueil"/></a>
         <ul class="nav-links">
           <li>
-            <a href="index.html"><img src="images/logo.png" height="20px"/></a>
+            <a href="films.html"><b>Films</b></a>
           </li>
-          <li><a href="films.html">Films</a></li>
-          <li><a href="persos.html">Personnages</a></li>
+          <li>
+            <a href="persos.html"><b>Personnages</b></a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      persos
+      <div class="persos">
+        <ul class="pers">
+          <li><img class="img_persos" src="images/persos/harry.jpg" alt="Harry Potter" title="Harry Potter" height="200px"></li>
+          <li><h3>Harry Potter</h3></li>
+          <div class="txt_persos">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae molestie massa. Duis vel dui congue, dignissim felis et, sagittis odio. Donec tincidunt, neque eu posuere fermentum, tortor ex maximus magna, et sagittis justo purus vitae mi. Donec egestas blandit dolor, at vehicula ligula. Nunc libero sem, rutrum vel egestas eget, dignissim sit amet quam. Morbi molestie dictum lorem, a dignissim nisl mattis quis. Curabitur vulputate dolor a tempus pellentesque. Fusce euismod mattis mauris eget eleifend.</li>
+          </div>
+        </ul>
+        
+        
+        <img class="img_persos" src="images/persos/hermione.jpg" alt="Hermione Granger" title="Hermione Granger" height="200px">
+      <div class="desc_persos">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae molestie massa. Duis vel dui congue, dignissim felis et, sagittis odio. Donec tincidunt, neque eu posuere fermentum, tortor ex maximus magna, et sagittis justo purus vitae mi. Donec egestas blandit dolor, at vehicula ligula. Nunc libero sem, rutrum vel egestas eget, dignissim sit amet quam. Morbi molestie dictum lorem, a dignissim nisl mattis quis. Curabitur vulputate dolor a tempus pellentesque. Fusce euismod mattis mauris eget eleifend.</p>
+      </div>
+        
+        <img class="img_persos" src="images/persos/ron.jpg" alt="Ron Weasley" title="Ron Weasley" height="200px">
+      <div class="desc_persos">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae molestie massa. Duis vel dui congue, dignissim felis et, sagittis odio. Donec tincidunt, neque eu posuere fermentum, tortor ex maximus magna, et sagittis justo purus vitae mi. Donec egestas blandit dolor, at vehicula ligula. Nunc libero sem, rutrum vel egestas eget, dignissim sit amet quam. Morbi molestie dictum lorem, a dignissim nisl mattis quis. Curabitur vulputate dolor a tempus pellentesque. Fusce euismod mattis mauris eget eleifend.</p>
+      </div>
+        
+        <img class="img_persos" src="images/persos/voldemort.jpg" alt="Voldemort" title="Celui dont on ne doit pas prononcer le nom" height="200px">
+      <div class="desc_persos">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae molestie massa. Duis vel dui congue, dignissim felis et, sagittis odio. Donec tincidunt, neque eu posuere fermentum, tortor ex maximus magna, et sagittis justo purus vitae mi. Donec egestas blandit dolor, at vehicula ligula. Nunc libero sem, rutrum vel egestas eget, dignissim sit amet quam. Morbi molestie dictum lorem, a dignissim nisl mattis quis. Curabitur vulputate dolor a tempus pellentesque. Fusce euismod mattis mauris eget eleifend.</p>
+      </div>
+        
+      </div>
+
+      
+
+
+      
+    <div class="bg">
+      <div id="video_fond">
+        <video autoplay loop muted playsinline>
+          <source src="images/background.mp4">
+        </video>
+      </div>
+
     </main>
 
-    <footer>liens vers sites + site officiel remontée de page</footer>
+    <footer>
+      <ul class="sites">
+        <li>
+          <a href="https://www.youtube.com/@harrypotter" target="_blank"> <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+          <a href="https://www.instagram.com/harrypotter/" target="_blank"> <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/harrypotter?lang=fr" target="_blank"> <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/tag/harrypotter" target="_blank"> <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+      </ul>
+
+	    <!-- pour retourner en haut de la page -->
+      <div class="arrow">
+        <a href="persos.html"> <i class="fa-solid fa-arrow-up"></i>
+      </div>
+            
+    </footer>
+    
   </body>
 </html>

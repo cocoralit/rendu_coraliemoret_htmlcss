@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Films</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <nav class="navbar">
+      <nav>
+        <a href="index.html"><img class="logo" src="images/logo.png"  alt="Accueil"/></a>
         <ul class="nav-links">
           <li>
-            <a href="index.html"><img src="images/logo.png" height="20px"/></a>
+            <a href="films.html"><b>Films</b></a>
           </li>
-          <li><a href="films.html">Films</a></li>
-          <li><a href="persos.html">Personnages</a></li>
+          <li>
+            <a href="persos.html"><b>Personnages</b></a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      films
+      
+      <h1>Les films</h1>
+        <div class="books">
+          <img class="img_zoom" src="images/films/1.webp" alt="Harry Potter à l'Ecole des Sorciers" title="Harry Potter à l'Ecole des Sorciers" height="300px">
+          <img class="img_zoom" src="images/films/2.jpg" alt="Harry Potter et la Chambre des Secrets" title="Harry Potter et la Chambre des Secrets" height="300px">
+          <img class="img_zoom" src="images/films/3.jpg" alt="Harry Potter et le Prisonner d'Azkaban" title="Harry Potter et le Prisonner d'Azkaban" height="300px">
+          <img class="img_zoom" src="images/films/4.jpg" alt="Harry Potter et la Coupe de Feu" title="Harry Potter et la Coupe de Feu" height="300px">
+          <img class="img_zoom" src="images/films/5.jpg" alt="Harry Potter et l'Ordre du Phénix" title="Harry Potter et l'Ordre du Phénix" height="300px">
+          <img class="img_zoom" src="images/films/6.jpg" alt="Harry Potter et le Prince de Sang-Mêlé" title="Harry Potter et le Prince de Sang-Mêlé" height="300px">
+          <img class="img_zoom" src="images/films/7.webp" alt="Harry Potter et les Reliques de la Mort - La Menace est partout" title="Harry Potter et les Reliques de la Mort - La Menace est partout" height="300px">
+          <img class="img_zoom" src="images/films/8.jpg" alt="Harry Potter et les Reliques de la Mort - L'Affrontement Final" title="Harry Potter et les Reliques de la Mort - L'Affrontement Final" height="300px">
+        </div>
+
+      
+    <div class="bg">
+      <div id="video_fond">
+        <video autoplay loop muted playsinline>
+          <source src="images/background.mp4">
+        </video>
+      </div>
+
     </main>
 
-    <footer>liens vers sites + site officiel remontée de page</footer>
-</body>
+    <footer>
+      <ul class="sites">
+        <li>
+          <a href="https://www.youtube.com/@harrypotter" target="_blank"> <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+          <a href="https://www.instagram.com/harrypotter/" target="_blank"> <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/harrypotter?lang=fr" target="_blank"> <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/tag/harrypotter" target="_blank"> <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+      </ul>
+
+	    <!-- pour retourner en haut de la page -->
+        <div class="arrow">
+            <a href="films.html"> <i class="fa-solid fa-arrow-up"></i>
+        </div>
+
+    </footer>
+    
+  </body>
 </html>
