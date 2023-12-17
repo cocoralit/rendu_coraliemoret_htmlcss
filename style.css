@@ -33,8 +33,20 @@ body {
 	}
 
 /*/ barre de navigation /*/
+@media screen and (max-width: 600px) {
+  nav {background-color: #0E1A40;}
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  nav {background-color: #1A472A;}
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  nav {background-color: #740001;}
+}
+@media screen and (min-width: 1001px) {
+  nav {background-color: #ECB939;}
+}
+
 nav {
-  background-color: #d3a625;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,54 +80,6 @@ nav a:hover {
 }
 
 
-/* sommaire */
-#sommaire	{
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-#sommaire ul	{
-  display: inline-block;
-  margin: auto;
-  text-align: left;
-}
-#sommaire a	{
-  color: white;
-  text-decoration: none;
-}
-#sommaire a:hover	{
-  color: mediumvioletred;
-  text-decoration: none;
-}
-#sommaire ul ol {
-  display: none;
-  color: white;
-  text-decoration: none;
-}
-#sommaire ul li:hover ol	{
-  display: block;
-  color: #AAAAAA;
-  text-decoration: none;
-}
-#sommaire ul ul {
-  display: none;
-  color: white;
-  text-decoration: none;
-}
-#sommaire ol li:hover ol	{
-  display: block;
-  color: #AAAAAA;
-  text-decoration: none;
-}
-#sommaire ul li:hover ul	{
-  display: block;
-  color: #AAAAAA;
-  text-decoration: none;
-}
-
-
 
 /*/ footer /*/
 footer {
@@ -133,6 +97,12 @@ footer {
 
 i {
   color: white;
+  transition: color 0.1s ease;
+  transition: transform 0.3s ease;
+}
+i:hover {
+  color: #740001;
+  transform: scale(1.5);
 }
 
 /* flèche pour retourner en haut de page */
@@ -157,7 +127,14 @@ h2 {
   color: #F0C75E;
 }
 
-h3 {text-align: center;}
+h3 {
+  text-align: center;
+  transition: color 0.1s ease;
+}
+h3:hover {
+  color: #740001;
+}
+
 
 p {
   margin: 3rem;
@@ -165,8 +142,55 @@ p {
 }
 
 
-
 /*/ page d'accueil /*/
+/* sommaire */
+.sommaire	{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.sommaire ul	{
+  display: inline-block;
+  margin: auto;
+  text-align: left;
+}
+.sommaire a	{
+  color: white;
+  text-decoration: none;
+}
+.sommaire a:hover	{
+  color: mediumvioletred;
+  text-decoration: none;
+}
+.sommaire ul ol {
+  display: none;
+  color: white;
+  text-decoration: none;
+}
+.sommaire ul li:hover ol	{
+  display: block;
+  color: #AAAAAA;
+  text-decoration: none;
+}
+.sommaire ul ul {
+  display: none;
+  color: white;
+  text-decoration: none;
+}
+.sommaire ol li:hover ol	{
+  display: block;
+  color: #AAAAAA;
+  text-decoration: none;
+}
+.sommaire ul li:hover ul	{
+  display: block;
+  color: #AAAAAA;
+  text-decoration: none;
+}
+
+
 .houses {
   display: flex;
   flex-wrap: wrap;
@@ -176,6 +200,7 @@ p {
   padding: 2rem;
 }
 
+
 .books {
   display: flex;
   flex-wrap: wrap;
@@ -183,8 +208,8 @@ p {
   align-items: center;
   gap: 20px;
   padding: 3rem;
-  
 }
+
 
 .img_zoom {
   padding: 10px;
@@ -192,19 +217,22 @@ p {
   border-radius: 5%;
 }
 
+
 .img_zoom:hover {
   transform: scale(1.5);
 }
+
 
 
 /*/ page des personnages /*/
 .persos {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .pers {
@@ -212,17 +240,13 @@ p {
 }
 
 .img_persos {
-  padding: 10px;
-  transition: transform 0.3s ease;
-}
-.img_persos:hover {
-  transform: scale(1.1);
+  justify-content: center;
 }
 
 .txt_persos {
   display: none;
-  transition: transform 0.3s ease;
 }
-.txt_persos ul li:hover li {
+.img_persos:focus ~ .txt_persos {
   display: block;
+  justify-content: center;
 }
